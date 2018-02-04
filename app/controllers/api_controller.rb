@@ -3,6 +3,7 @@ class ApiController < ActionController::Base
 
   def show
     @apis = apis
+    @hostname = 'http://localhost:9000'
 
     id = params[:id].to_sym
     if id == :index
